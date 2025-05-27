@@ -1,10 +1,10 @@
 import LeetCode.LeetCode;
 
-public class main {
+public class LeetCodeExecute {
     public static void main(String[] args) {
         CodeFactory codeFactory = new CodeFactory();
         try {
-            LeetCode leetcode = codeFactory.getLeetCodeClass("LeetCode.LeetCode79");
+            LeetCode leetcode = codeFactory.getLeetCodeClass("LeetCode.LeetCode131");
             leetcode.execute();
         } catch (Exception e) {
             throw new RuntimeException(e);
