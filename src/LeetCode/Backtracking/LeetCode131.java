@@ -1,10 +1,12 @@
-package LeetCode;
+package LeetCode.Backtracking;
+
+import LeetCode.LeetCode;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class LeetCode131 implements LeetCode{
+public class LeetCode131 implements LeetCode {
     @Override
     public void execute() {
         partition("aab");

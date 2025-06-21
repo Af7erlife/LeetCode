@@ -1,4 +1,6 @@
-package LeetCode;
+package LeetCode.Array;
+
+import LeetCode.LeetCode;
 
 public class LeetCode53 implements LeetCode {
     public void execute(){

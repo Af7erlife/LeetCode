@@ -1,4 +1,6 @@
-package LeetCode;
+package LeetCode.Backtracking;
+
+import LeetCode.LeetCode;
 
 public class LeetCode19 implements LeetCode {
 

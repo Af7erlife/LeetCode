@@ -1,11 +1,13 @@
-package LeetCode;
+package LeetCode.Backtracking;
+
+import LeetCode.LeetCode;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class LeetCode17 implements LeetCode{
+public class LeetCode17 implements LeetCode {
     @Override
     public void execute() {
         letterCombinations(new String("23"));

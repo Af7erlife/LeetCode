@@ -1,4 +1,6 @@
-package LeetCode;
+package LeetCode.Backtracking;
+
+import LeetCode.LeetCode;
 
 /**
  * 79. 单词搜索
