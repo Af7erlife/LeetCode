@@ -19,11 +19,33 @@ import java.util.Stack;
 public class LeetCode394 implements LeetCode {
     @Override
     public void execute() {
-        decodeString("3[a]2[bc]");
+        decodeString("2[2[b]]");
 
     }
 
     public String decodeString(String s) {
-
+        StringBuilder res = new StringBuilder();
+        int multi = 0;
+        Stack<Integer> numStack = new Stack<>();
+        Stack<String> stringStack = new Stack<>();
+        for(Character c : s.toCharArray()){
+            if(c == '['){//push
+                numStack.push(multi);
+                stringStack.push(res.toString());
+                multi = 0;
+               res.delete(0, res.length());
+            }else if(c>='0' && c<='9'){
+                multi = multi * 10 + Integer.parseInt(String.valueOf(c));//解决多位数字
+            }else if(c == ']'){
+                int num = numStack.pop();
+                String temp = stringStack.pop();
+                String str =  temp+ res.toString().repeat(Math.max(0, num));
+                res.delete(0, res.length());
+                res.append(str);
+            }else{
+                res.append(c);
+            }
+        }
+        return res.toString();
     }
 }
