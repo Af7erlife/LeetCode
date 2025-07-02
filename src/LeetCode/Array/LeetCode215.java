@@ -1,11 +1,10 @@
-package LeetCode.Heap;
+package LeetCode.Array;
 
 import LeetCode.LeetCode;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
-import java.util.Stack;
 
 /**
  * 215. 数组中的第K个最大元素
