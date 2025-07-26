@@ -4,9 +4,9 @@ public class LeetCodeExecute {
     public static void main(String[] args) {
         CodeFactory codeFactory = new CodeFactory();
         try {
-            LeetCode leetcode = codeFactory.getLeetCodeClass("LeetCode.Heap.LeetCode2163");
+            //LeetCode leetcode = codeFactory.getLeetCodeClass("LeetCode.Heap.LeetCode2163");
             //LeetCode leetcode = codeFactory.getLeetCodeClass("LeetCode.DP.LeetCode5");
-            //LeetCode leetcode = codeFactory.getLeetCodeClass("LeetCode.Array.LeetCode8");
+            LeetCode leetcode = codeFactory.getLeetCodeClass("LeetCode.Array.LeetCode1717");
             //LeetCode leetcode = codeFactory.getLeetCodeClass("LeetCode.HashMap.LeetCode1394");
             leetcode.execute();
         } catch (Exception e) {
