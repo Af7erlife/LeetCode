@@ -36,7 +36,7 @@ public class LeetCode3480 implements LeetCode {
      */
     public long maxSubarrays(int n, int[][] conflictingPairs) {
         List<Integer>[] groups = new ArrayList[n + 1];
-        Arrays.setAll(groups, _ -> new ArrayList<>());
+        //Arrays.setAll(groups, _ -> new ArrayList<>());
         for (int[] p : conflictingPairs) {
             int a = p[0];
             int b = p[1];
